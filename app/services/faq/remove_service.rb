@@ -9,7 +9,7 @@ module FaqModule
 
     def call
       begin
-      faq = @company.faqs.find(id: @id)
+      faq = @company.faqs.find(@id)
       rescue
         return "Questão inválida, verifique o Id"
       end
