@@ -27,8 +27,7 @@ describe LinkModule::CreateService do
       @createService = LinkModule::CreateService.new({"url" => @url, "hashtags-original" => @hashtags})
 
       response = @createService.call()
-      expect(Link.last.question).to match(@question)
-      expect(Link.last.answer).to match(@answer)
+      expect(Link.last.url).to match(@url)
     end
 
     it "With valid params, hashtags are created" do

@@ -23,7 +23,7 @@ describe LinkModule::RemoveService do
 
     it "With valid ID, remove Faq from database" do
       link = create(:link, company: @company)
-      @removeService = LinkModule::RemoveService.new({"id" => faq.id})
+      @removeService = LinkModule::RemoveService.new({"id" => link.id})
 
       expect(Link.all.count).to eq(1)
       response = @removeService.call()
