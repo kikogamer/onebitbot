@@ -22,7 +22,7 @@ module LinkModule
           end
         end
         link.delete
-        "Deletado com sucesso"
+        "Apagado com sucesso"
       end
     end
   end

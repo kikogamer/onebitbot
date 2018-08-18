@@ -22,7 +22,7 @@ module FaqModule
           end
         end
         faq.delete
-        "Deletado com sucesso"
+        "Apagado com sucesso"
       end
     end
   end
